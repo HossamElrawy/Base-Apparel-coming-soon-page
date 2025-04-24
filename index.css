@@ -1,0 +1,196 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.36065574fr 1fr;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== IMAGE STYLES ===== */
+.avatar-image {
+    width: 100%;
+}
+
+.avatar-image-mob {
+    display: none;
+}
+
+/* ===== MAIN CONTENT SECTION ===== */
+.article-side {
+    padding: 4.0625rem 13.75rem 0 10.3125rem; /* 65px 220px 0 165px */
+}
+
+.logo-img {
+    margin-bottom: 8.5625rem; /* 137px */
+}
+
+/* ===== TYPOGRAPHY ===== */
+.were-para {
+    font-size: 3.9375rem; /* 63px */
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    width: 100%;
+    letter-spacing: 0.275rem; /* 4.4px - added for better spacing */
+}
+
+.coming-para {
+    font-size: 4rem; /* 64px */
+    color: hsl(0, 6%, 24%);
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 0.275rem; /* 4.4px */
+}
+
+.hello-para {
+    width: 100%;
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+    margin-top: 2.5625rem; /* 41px */
+    margin-bottom: 3.0625rem; /* 49px */
+    color: hsl(0, 36%, 70%);
+}
+
+/* ===== EMAIL FORM SECTION ===== */
+.email-para {
+    background-color: transparent;
+    border: 1px solid hsla(0, 36%, 70%, 0.4);
+    padding: 1.25rem 2rem; /* 20px 32px */
+    width: 100%;
+    border-radius: 3.125rem; /* 50px */
+    font-family: "Josefin Sans";
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+}
+
+.email-para::placeholder {
+    color: hsla(0, 36%, 70%, 0.4);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.input-div {
+    position: relative;
+}
+
+.click-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 6.25rem; /* 100px */
+    border: none;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 3.125rem; /* 50px */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.click-button:hover {
+    opacity: 0.5;
+}
+
+/* ===== ERROR STATES ===== */
+.warn-tag {
+    position: absolute;
+    bottom: 1.1875rem; /* 19px */
+    right: 7.25rem; /* 116px */
+    display: none;
+}
+
+.error-msg {
+    color: hsl(0, 93%, 68%);
+    padding: 0.625rem 2rem 0 2rem; /* 10px 32px 0 32px */
+    display: none;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.not-hidden {
+    display: block;
+}
+
+.border-color {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 50rem) { /* 800px */
+    body {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: 0% 0%;
+    }
+    
+    .avatar-image {
+        display: none;
+    }
+    
+    .avatar-image-mob {
+        display: block;
+        width: 100%;
+    }
+    
+    .article-side {
+        padding: 0;
+    }
+    
+    .logo-img {
+        width: 6.25rem; /* 100px */
+        margin: 2rem; /* 32px */
+    }
+    
+    .were-para {
+        margin-top: 4.125rem; /* 66px */
+        text-align: center;
+        font-size: 2.375rem; /* 38px */
+    }
+    
+    .coming-para {
+        font-size: 2.375rem; /* 38px */
+        text-align: center;
+    }
+    
+    .hello-para {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 1.8125rem 2.375rem 2.4375rem 2.375rem; /* 29px 38px 39px 38px */
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.5rem; /* 24px */
+    }
+    
+    .input-div {
+        margin: 0 2rem; /* 32px */
+    }
+    
+    .email-para {
+        padding: 1rem 1.5rem; /* 16px 24px */
+    }
+       
+    .click-button {
+        width: 4rem; /* 64px */
+    }
+    
+    .warn-tag {
+        bottom: 0.875rem; /* 14px */
+        right: 4.375rem; /* 70px */
+    }
+    
+    .error-msg {
+        text-align: center;
+        padding: 0;
+        padding-top: 0.5rem; /* 8px */
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts - Josefin Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" alt="Base Apparel favicon">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Base Apparel coming soon page</title>
+</head>
+<body>
+  <!-- Main content container -->
+  <article class="article-side">
+    <!-- Company logo -->
+    <img src="images/logo.svg" class="logo-img" alt="Base Apparel logo">
+    
+    <!-- Mobile hero image (hidden on desktop) -->
+    <img src="images/hero-mobile.jpg" class="avatar-image-mob" alt="Woman in stylish clothing (mobile view)">
+    
+    <!-- Headings -->
+    <p class="were-para">
+      W E ' R E
+    </p>
+    <p class="coming-para">
+      C O M I N G 
+    </p>
+    <p class="coming-para">
+      S O O N
+    </p>
+
+    <!-- Description paragraph -->
+    <p class="hello-para">
+      Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+    
+    <!-- Email input section -->
+    <div class="input-div">
+      <input 
+        class="email-para js-email-para" 
+        placeholder="Email Address" 
+        aria-label="Email address input"
+        type="email"
+      >
+      
+      <!-- Submit button -->
+      <button class="click-button js-click-button" aria-label="Submit email">
+        <img src="images/icon-arrow.svg" alt="Submit arrow">
+      </button>
+      
+      <!-- Error icon (hidden by default) -->
+      <img src="images/icon-error.svg" alt="Error indicator" class="warn-tag js-warn-tag">
+    </div>
+    
+    <!-- Error message (hidden by default) -->
+    <p class="error-msg js-error-msg">
+      Please provide a valid email
+    </p>
+  </article>
+  
+  <!-- Desktop hero image (hidden on mobile) -->
+  <img src="images/hero-desktop.jpg" class="avatar-image" alt="Woman in stylish clothing (desktop view)">
+  
+  <!-- JavaScript file -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -131,6 +131,7 @@ body {
         background-repeat: repeat;
         background-size: auto;
         background-position: 0% 0%;
+        padding-bottom: 2rem; /*32px*/
     }
     
     .avatar-image {
